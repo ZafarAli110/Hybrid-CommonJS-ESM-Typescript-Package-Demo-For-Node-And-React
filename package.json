@@ -1,0 +1,16 @@
+{
+  "name": "pnpm_mono",
+  "version": "1.0.0",
+  "description": "Monorepo to demonstrate hybrid typescript package",
+  "keywords": [
+    "pnpm",
+    "typescript",
+    "monorepo",
+    "hybrid"
+  ],
+  "author": "Zafar Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

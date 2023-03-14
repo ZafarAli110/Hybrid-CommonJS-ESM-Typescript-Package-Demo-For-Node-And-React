@@ -1,0 +1,25 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "Shared library for the project",
+  "main": "dist/cjs/index.js",
+  "private": true,
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:mjs": "tsc -p tsconfig.mjs.json",
+    "build": "rm -rf dist && pnpm run build:cjs && pnpm run build:mjs"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "Zafar Ali",
+  "license": "ISC"
+}

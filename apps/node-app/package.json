@@ -1,0 +1,19 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple node app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "app"
+  ],
+  "author": "Zafar Ali",
+  "license": "ISC",
+  "dependencies": {
+    "lib": "workspace:^1.0.0"
+  }
+}
