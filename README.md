@@ -15,17 +15,19 @@ Clone this repository.
 
 Install dependencies using pnpm install.
 
+Make sure to build the typscript library first by running the following command from the root
+```
+pnpm --filter lib build
+
+```
+
 From the root run the following commands to run the react and node application 
 ```
 pnpm --filter react-app dev
 pnpm --filter node-app start
 
 ```
-To build the Typescript Library run the following command from the root
-```
-pnpm --filter lib build
 
-```
 
 Contributing
 Contributions are always welcome! Here's how you can contribute:
