@@ -1,5 +1,5 @@
 # Simple Monorepo with PNPM Workspace
-A simple monorepo starter featuring a workspace set up using pnpm that demonstrates a hybrid typescript library. The repository contains apps and packages folders.
+A simple monorepo starter featuring a workspace set up using pnpm that demonstrates a hybrid CJS and ESM typescript library. The repository contains apps and packages folders.
 
 ## About The Project
 This project has the following components:
@@ -17,14 +17,14 @@ Install dependencies using pnpm install.
 
 Make sure to build the typscript library first by running the following command from the root
 ```
-pnpm --filter lib build
+pnpm --filter lib build or run pnpm build:lib
 
 ```
 
 From the root run the following commands to run the react and node application 
 ```
-pnpm --filter react-app dev
-pnpm --filter node-app start
+pnpm --filter react-app dev or pnpm vite:dev
+pnpm --filter node-app start or pnpm node:start
 
 ```
 
